@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Steppe-Book' ;
+  src: url('./assets/fonts/Steppe-Book.ttf');
+}
+
+@font-face {
+  font-family: 'Steppe-ExtraBold' ;
+  src: url('./assets/fonts/Steppe-ExtraBold.ttf');
+}
+
+body {
+  background-color: #5243F4;
+  font-family: 'Steppe-Book', sans-serif;
+  color: white;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.button {
+   background-color: white;
+   border-radius: 60px;
+   width: 178px;
+   height: 58px;
+   box-sizing: border-box;
+   padding: 18px;
+   text-align: center;
+   font-size: 18px;
+   color: #5243F4;
+   border: 0;
+   outline: none;
+   cursor: pointer;
+ }
+.violet-button {
+  background-color: #5243F4;
+  color: white;
+}
+
+.button:disabled {
+  background-color: #585858;
+  color: gray;
+  cursor: not-allowed;
+
+}
+
+.button.violet-button:hover:not(:disabled) {
+  background-color: #3423d4;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #eeeeee;
+}
